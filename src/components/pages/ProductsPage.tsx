@@ -14,34 +14,34 @@ export const ProductsPage: React.FC = () => {
     singlePacks.find((p) => p.id === selectedPackId) || singlePacks[1];
 
   return (
-    <div className="pt-28 lg:pt-36 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+    <div className="pt-24 sm:pt-28 lg:pt-36 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 sm:space-y-28">
       
       {/* 1. Page Header */}
-      <div className="max-w-2xl mx-auto text-center space-y-3">
-        <span className="font-serif text-xs tracking-[0.35em] uppercase text-[#cca578] font-light block">
+      <div className="max-w-3xl mx-auto text-center space-y-3.5">
+        <span className="font-serif text-sm sm:text-base tracking-[0.35em] uppercase text-[#cca578] font-medium block">
           THE ARTISANAL ROSTER
         </span>
-        <h1 className="text-4xl sm:text-5xl font-serif font-light text-white">
+        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-light text-white leading-tight">
           Our Products & Bundles
         </h1>
-        <p className="text-stone-400 text-xs sm:text-sm font-light">
+        <p className="text-stone-200 text-base sm:text-lg lg:text-xl font-light max-w-xl mx-auto">
           Each pouch is sealed fresh with pure Nigerian groundnuts, local chili warmth, and zero grit.
         </p>
       </div>
 
       {/* 2. Interactive Size Selector Showcase */}
-      <section className="p-8 sm:p-12 rounded-3xl bg-[#0f0f14] border border-amber-900/40 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <section className="p-6 sm:p-10 lg:p-14 rounded-3xl bg-[#0f0f14] border border-amber-900/40 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         
         {/* Left Column: Visual Showcase */}
         <div className="lg:col-span-6">
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-stone-800 bg-black">
+          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-stone-800 bg-black shadow-2xl">
             <img
               src={currentSelectedSingle.image}
               alt={currentSelectedSingle.name}
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover"
             />
-            <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-sm border border-amber-900/40 px-3 py-1 rounded-full text-[11px] font-mono text-[#cca578]">
+            <div className="absolute top-4 left-4 bg-black/85 backdrop-blur-md border border-amber-900/60 px-4 py-2 rounded-full text-sm sm:text-base font-mono text-[#cca578] font-bold shadow-md">
               {currentSelectedSingle.weight}
             </div>
           </div>
@@ -50,37 +50,37 @@ export const ProductsPage: React.FC = () => {
         {/* Right Column: Size Switching & Buy Module */}
         <div className="lg:col-span-6 space-y-6">
           <div>
-            <span className="text-[10px] font-mono tracking-widest text-[#cca578] uppercase block mb-1">
+            <span className="text-xs sm:text-sm font-mono tracking-widest text-[#cca578] uppercase block mb-1.5 font-semibold">
               INTERACTIVE SIZE SELECTOR
             </span>
-            <h2 className="font-serif text-3xl sm:text-4xl text-white font-light">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-white font-light">
               {currentSelectedSingle.name}
             </h2>
-            <p className="text-xs sm:text-sm text-stone-300 font-light mt-2 leading-relaxed">
+            <p className="text-base sm:text-lg text-stone-200 font-light mt-2.5 leading-relaxed">
               {currentSelectedSingle.description}
             </p>
           </div>
 
           {/* Size Choice Buttons */}
           <div>
-            <label className="block text-xs uppercase tracking-wider text-stone-400 mb-2">
+            <label className="block text-xs sm:text-sm uppercase tracking-wider text-stone-300 mb-2.5 font-medium">
               Select Pouch Size:
             </label>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               {singlePacks.map((pack) => (
                 <button
                   key={pack.id}
                   onClick={() => setSelectedPackId(pack.id)}
-                  className={`p-3.5 rounded-xl border text-left transition-all cursor-pointer ${
+                  className={`p-4 sm:p-4.5 rounded-xl border text-left transition-all cursor-pointer active:scale-98 ${
                     selectedPackId === pack.id
-                      ? 'bg-amber-950/30 border-[#cca578] ring-1 ring-[#cca578]'
-                      : 'bg-stone-900/60 border-stone-800 hover:border-stone-700'
+                      ? 'bg-amber-950/40 border-[#cca578] ring-1 ring-[#cca578] shadow-md'
+                      : 'bg-stone-900/70 border-stone-800 hover:border-stone-700'
                   }`}
                 >
-                  <span className="block font-mono text-xs font-semibold text-white">
+                  <span className="block font-mono text-sm sm:text-base font-bold text-white">
                     {pack.name.split(' ')[1]} ({pack.weight})
                   </span>
-                  <span className="font-mono text-sm text-amber-200 mt-1 block">
+                  <span className="font-mono text-base sm:text-lg text-amber-200 mt-1 block font-bold">
                     {formatNaira(pack.priceNaira)}
                   </span>
                 </button>
@@ -89,19 +89,19 @@ export const ProductsPage: React.FC = () => {
           </div>
 
           {/* Price & Add to Bag */}
-          <div className="pt-4 border-t border-stone-800 flex items-center justify-between">
+          <div className="pt-5 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
-              <span className="text-[10px] uppercase text-stone-500 block">Active Selection Price</span>
-              <span className="font-mono text-2xl font-bold text-amber-200">
+              <span className="text-xs sm:text-sm uppercase text-stone-400 block font-medium">Active Selection Price</span>
+              <span className="font-mono text-2xl sm:text-4xl font-bold text-amber-200">
                 {formatNaira(currentSelectedSingle.priceNaira)}
               </span>
             </div>
 
             <button
               onClick={() => addToCart(currentSelectedSingle)}
-              className="px-8 py-3.5 rounded-full bg-[#cca578] hover:bg-[#e2c29d] text-stone-950 font-semibold text-xs tracking-wider uppercase transition-all shadow-xl cursor-pointer flex items-center gap-2"
+              className="w-full sm:w-auto px-8 py-4 sm:py-4.5 rounded-full bg-[#cca578] hover:bg-[#e2c29d] text-stone-950 font-bold text-sm sm:text-base tracking-wider uppercase transition-all shadow-xl cursor-pointer flex items-center justify-center gap-2.5 active:scale-98"
             >
-              <Plus className="w-4 h-4 stroke-[2.5]" />
+              <Plus className="w-5 h-5 stroke-[2.5]" />
               <span>Add to Crunch Bag</span>
             </button>
           </div>
@@ -112,10 +112,10 @@ export const ProductsPage: React.FC = () => {
       {/* 3. Party & Gifting Bundles */}
       <section className="space-y-8">
         <div>
-          <span className="font-serif text-xs tracking-[0.3em] uppercase text-[#cca578] font-light block mb-1">
+          <span className="font-serif text-sm sm:text-base tracking-[0.3em] uppercase text-[#cca578] font-medium block mb-1.5">
             CELEBRATION & SHARING
           </span>
-          <h2 className="text-3xl sm:text-4xl font-serif font-light text-white">
+          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif font-light text-white">
             Party & Gifting Bundles
           </h2>
         </div>
@@ -124,14 +124,14 @@ export const ProductsPage: React.FC = () => {
           {bundlePacks.map((bundle) => (
             <div
               key={bundle.id}
-              className="p-8 rounded-2xl bg-[#111116] border border-amber-900/40 hover:border-amber-600/60 transition-all flex flex-col justify-between"
+              className="p-6 sm:p-9 rounded-2xl bg-[#111116] border border-amber-900/40 hover:border-amber-600/60 transition-all flex flex-col justify-between shadow-xl"
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-[10px] font-mono tracking-widest text-[#cca578] bg-amber-950/40 border border-amber-900/60 px-3 py-1 rounded-full uppercase">
+                  <span className="text-xs sm:text-sm font-mono tracking-widest text-[#cca578] bg-amber-950/40 border border-amber-900/60 px-3.5 py-1.5 rounded-full uppercase font-semibold">
                     {bundle.tag}
                   </span>
-                  <span className="text-xs font-mono text-stone-400">
+                  <span className="text-sm sm:text-base font-mono text-stone-200 font-bold">
                     {bundle.weight}
                   </span>
                 </div>
@@ -145,27 +145,27 @@ export const ProductsPage: React.FC = () => {
                   />
                 </div>
 
-                <h3 className="font-serif text-2xl text-white font-normal mb-2">
+                <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-white font-normal mb-2.5">
                   {bundle.name}
                 </h3>
-                <p className="text-xs text-stone-400 font-light leading-relaxed mb-6">
+                <p className="text-base sm:text-lg text-stone-300 font-light leading-relaxed mb-6">
                   {bundle.description}
                 </p>
               </div>
 
-              <div className="pt-4 border-t border-stone-800 flex items-center justify-between">
+              <div className="pt-5 border-t border-stone-800 flex flex-col sm:flex-row sm:items-center justify-between gap-3.5">
                 <div>
-                  <span className="text-[10px] uppercase text-stone-500 block">Bundle Price</span>
-                  <span className="font-mono text-2xl font-bold text-amber-200">
+                  <span className="text-xs sm:text-sm uppercase text-stone-400 block font-medium">Bundle Price</span>
+                  <span className="font-mono text-2xl sm:text-3xl font-bold text-amber-200">
                     {formatNaira(bundle.priceNaira)}
                   </span>
                 </div>
 
                 <button
                   onClick={() => addToCart(bundle)}
-                  className="px-6 py-3 rounded-full bg-[#cca578] hover:bg-[#e2c29d] text-stone-950 font-semibold text-xs tracking-wider uppercase transition-all cursor-pointer flex items-center gap-1.5"
+                  className="w-full sm:w-auto px-7 py-3.5 sm:py-4 rounded-full bg-[#cca578] hover:bg-[#e2c29d] text-stone-950 font-bold text-sm sm:text-base tracking-wider uppercase transition-all cursor-pointer flex items-center justify-center gap-2 shadow-md active:scale-98"
                 >
-                  <Plus className="w-4 h-4" />
+                  <Plus className="w-5 h-5 stroke-[2.5]" />
                   <span>Add Bundle</span>
                 </button>
               </div>
@@ -175,85 +175,87 @@ export const ProductsPage: React.FC = () => {
       </section>
 
       {/* 4. Nutrition Facts Table (per 100g) */}
-      <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      <section className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
         
         {/* Nutrition Table */}
-        <div className="lg:col-span-7 p-8 rounded-2xl bg-[#0f0f14] border border-stone-800 space-y-6">
-          <div className="border-b border-stone-800 pb-3">
-            <span className="text-[10px] font-mono tracking-widest text-[#cca578] uppercase block">
+        <div className="lg:col-span-7 p-6 sm:p-9 rounded-2xl bg-[#0f0f14] border border-stone-800 space-y-6">
+          <div className="border-b border-stone-800 pb-4">
+            <span className="text-xs sm:text-sm font-mono tracking-widest text-[#cca578] uppercase block mb-1 font-semibold">
               DIETARY TRANSPARENCY
             </span>
-            <h3 className="font-serif text-2xl text-white font-normal">
+            <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-white font-normal">
               Nutrition Facts Table (per 100g)
             </h3>
-            <p className="text-xs text-stone-400 font-light">
+            <p className="text-base text-stone-300 font-light mt-1">
               Tested and verified plant-based groundnut energy.
             </p>
           </div>
 
-          <table className="w-full text-xs">
-            <thead>
-              <tr className="border-b border-stone-800 text-stone-400 font-mono text-[11px] uppercase">
-                <th className="text-left py-2">Component</th>
-                <th className="text-right py-2">Amount per 100g</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-stone-800/60 font-mono">
-              <tr>
-                <td className="py-2.5 text-stone-200">Energy</td>
-                <td className="py-2.5 text-right text-amber-200 font-semibold">750 kcal</td>
-              </tr>
-              <tr>
-                <td className="py-2.5 text-stone-200">Carbohydrate</td>
-                <td className="py-2.5 text-right text-stone-300">10 g</td>
-              </tr>
-              <tr>
-                <td className="py-2.5 text-stone-400 pl-4">└ Of which Sugars</td>
-                <td className="py-2.5 text-right text-stone-400">5 g</td>
-              </tr>
-              <tr>
-                <td className="py-2.5 text-stone-200">Fat</td>
-                <td className="py-2.5 text-right text-stone-300">3 g</td>
-              </tr>
-              <tr>
-                <td className="py-2.5 text-stone-400 pl-4">└ Of which Saturates</td>
-                <td className="py-2.5 text-right text-stone-400">1 g</td>
-              </tr>
-              <tr>
-                <td className="py-2.5 text-stone-200">Protein</td>
-                <td className="py-2.5 text-right text-amber-200 font-semibold">5 g</td>
-              </tr>
-              <tr>
-                <td className="py-2.5 text-stone-200">Salt</td>
-                <td className="py-2.5 text-right text-stone-300">30 mg</td>
-              </tr>
-              <tr>
-                <td className="py-2.5 text-stone-200">Vitamin B12</td>
-                <td className="py-2.5 text-right text-emerald-400">Healthy daily source</td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="overflow-x-auto">
+            <table className="w-full text-base sm:text-lg min-w-[280px]">
+              <thead>
+                <tr className="border-b border-stone-800 text-stone-400 font-mono text-xs sm:text-sm uppercase">
+                  <th className="text-left py-3">Component</th>
+                  <th className="text-right py-3">Amount per 100g</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-stone-800/60 font-mono text-base sm:text-lg">
+                <tr>
+                  <td className="py-3.5 text-stone-200 font-medium">Energy</td>
+                  <td className="py-3.5 text-right text-amber-200 font-bold">750 kcal</td>
+                </tr>
+                <tr>
+                  <td className="py-3.5 text-stone-200">Carbohydrate</td>
+                  <td className="py-3.5 text-right text-stone-300">10 g</td>
+                </tr>
+                <tr>
+                  <td className="py-3.5 text-stone-400 pl-4">└ Of which Sugars</td>
+                  <td className="py-3.5 text-right text-stone-400">5 g</td>
+                </tr>
+                <tr>
+                  <td className="py-3.5 text-stone-200">Fat</td>
+                  <td className="py-3.5 text-right text-stone-300">3 g</td>
+                </tr>
+                <tr>
+                  <td className="py-3.5 text-stone-400 pl-4">└ Of which Saturates</td>
+                  <td className="py-3.5 text-right text-stone-400">1 g</td>
+                </tr>
+                <tr>
+                  <td className="py-3.5 text-stone-200 font-medium">Protein</td>
+                  <td className="py-3.5 text-right text-amber-200 font-bold">5 g</td>
+                </tr>
+                <tr>
+                  <td className="py-3.5 text-stone-200">Salt</td>
+                  <td className="py-3.5 text-right text-stone-300">30 mg</td>
+                </tr>
+                <tr>
+                  <td className="py-3.5 text-stone-200 font-medium">Vitamin B12</td>
+                  <td className="py-3.5 text-right text-emerald-400 font-semibold">Healthy daily source</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
         {/* Ingredients & Storage Instructions */}
         <div className="lg:col-span-5 space-y-6">
-          <div className="p-7 rounded-2xl bg-[#111116] border border-stone-800 space-y-3">
-            <h4 className="font-serif text-lg text-white font-normal">
+          <div className="p-6 sm:p-8 rounded-2xl bg-[#111116] border border-stone-800 space-y-3.5">
+            <h4 className="font-serif text-2xl sm:text-3xl text-white font-normal">
               Ingredients List & Allergen Advice
             </h4>
-            <p className="text-xs text-stone-300 font-light leading-relaxed">
+            <p className="text-base sm:text-lg text-stone-200 font-light leading-relaxed">
               <strong>Ingredients:</strong> Selected Groundnuts (Peanuts), Chili Pepper, Spices, Salt, Vegetable Oil.
             </p>
-            <div className="p-3 rounded-lg bg-amber-950/20 border border-amber-900/40 text-[11px] text-amber-200/90 font-light">
+            <div className="p-4 rounded-xl bg-amber-950/30 border border-amber-900/50 text-sm sm:text-base text-amber-200/95 font-light leading-relaxed">
               <strong>Allergen Notice:</strong> Contains Peanuts (Groundnuts). Made in a dedicated peanut processing facility free from gluten and shellfish.
             </div>
           </div>
 
-          <div className="p-7 rounded-2xl bg-[#111116] border border-stone-800 space-y-3">
-            <h4 className="font-serif text-lg text-white font-normal">
+          <div className="p-6 sm:p-8 rounded-2xl bg-[#111116] border border-stone-800 space-y-3.5">
+            <h4 className="font-serif text-2xl sm:text-3xl text-white font-normal">
               Storage Instructions
             </h4>
-            <p className="text-xs text-stone-300 font-light leading-relaxed">
+            <p className="text-base sm:text-lg text-stone-200 font-light leading-relaxed">
               Store in a cool, dry place away from direct sunlight. After opening, tightly re-press the airtight zip-lock seal to lock in maximum crispness.
             </p>
           </div>

@@ -35,9 +35,9 @@ const MainApp: React.FC = () => {
 
       {/* Luxury Toast Notification */}
       {toastMessage && (
-        <div className="fixed bottom-6 right-6 z-50 bg-[#141418]/95 border border-[#cca578] text-amber-100 text-xs py-3 px-5 rounded-xl shadow-2xl backdrop-blur-md flex items-center gap-3 animate-in fade-in slide-in-from-bottom-3 duration-300">
-          <Sparkles className="w-4 h-4 text-[#e5b95b]" />
-          <span>{toastMessage}</span>
+        <div className="fixed bottom-6 left-4 right-4 sm:left-auto sm:right-6 z-50 max-w-md bg-[#141418]/98 border border-[#cca578] text-amber-100 text-sm sm:text-base py-3.5 px-5 rounded-2xl shadow-2xl backdrop-blur-md flex items-center gap-3 animate-in fade-in slide-in-from-bottom-3 duration-300">
+          <Sparkles className="w-5 h-5 text-[#e5b95b] shrink-0" />
+          <span className="font-medium">{toastMessage}</span>
         </div>
       )}
     </div>

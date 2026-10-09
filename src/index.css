@@ -22,14 +22,29 @@
 
 :root {
   color-scheme: dark;
+  font-size: 17px;
+}
+
+@media (min-width: 640px) {
+  :root {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    font-size: 19px;
+  }
 }
 
 body {
   background-color: #08080a;
-  color: #e5e5e7;
+  color: #e8e8eb;
   font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  line-height: 1.65;
+  font-size: 1rem;
 }
 
 ::selection {

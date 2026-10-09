@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-[#050507] border-t border-stone-800/80 pt-16 pb-12 text-stone-400">
+    <footer className="bg-[#050507] border-t border-stone-800/80 pt-16 pb-12 text-stone-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Footer Row */}
@@ -29,28 +29,28 @@ export const Footer: React.FC = () => {
           
           {/* Brand Column */}
           <div className="md:col-span-4 space-y-4">
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-4 text-[#e5b95b]" viewBox="0 0 24 24" fill="currentColor">
+            <div className="flex items-center gap-2.5">
+              <svg className="w-6 h-5 text-[#e5b95b]" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z" />
               </svg>
-              <div className="flex items-baseline gap-1.5">
+              <div className="flex items-baseline gap-2">
                 <span
                   style={{ fontFamily: "'Alex Brush', cursive" }}
-                  className="text-3xl text-metallic-gold"
+                  className="text-3xl sm:text-4xl text-metallic-gold"
                 >
                   Yadah
                 </span>
-                <span className="font-serif text-xs tracking-[0.2em] uppercase text-stone-300">
+                <span className="font-serif text-sm tracking-[0.2em] uppercase text-stone-200 font-semibold">
                   CRUNCHIES
                 </span>
               </div>
             </div>
 
-            <p className="text-xs text-stone-400 font-light leading-relaxed max-w-sm">
+            <p className="text-sm sm:text-base text-stone-300 font-light leading-relaxed max-w-sm">
               Artisanal flat kulikuli peanut crisps crafted with botanical Nigerian spices. 100% natural, protein-rich, zero grit, and easy on the teeth.
             </p>
 
-            <div className="text-[11px] text-stone-500 font-mono space-y-1">
+            <div className="text-xs sm:text-sm text-stone-300 font-mono space-y-1.5 pt-1">
               <div>📍 Off Hassan Katsina Road, Zone 8, Lokoja, Kogi State</div>
               <div>📞 +234 816 209 5850 / 08162095850</div>
               <div>📱 @YadahCrunchies</div>
@@ -58,33 +58,33 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Quick Nav Links */}
-          <div className="md:col-span-2 space-y-3">
-            <h4 className="text-xs font-sans tracking-[0.2em] uppercase text-stone-300 font-medium">
+          <div className="md:col-span-2 space-y-3.5">
+            <h4 className="text-sm font-sans tracking-[0.2em] uppercase text-stone-200 font-semibold">
               Navigation
             </h4>
-            <ul className="space-y-2 text-xs font-light">
+            <ul className="space-y-2.5 text-sm sm:text-base font-light text-stone-300">
               <li>
-                <button onClick={() => handleNav('home')} className="hover:text-amber-200 transition-colors cursor-pointer">
+                <button onClick={() => handleNav('home')} className="hover:text-amber-200 transition-colors cursor-pointer text-left py-0.5">
                   Home
                 </button>
               </li>
               <li>
-                <button onClick={() => handleNav('about')} className="hover:text-amber-200 transition-colors cursor-pointer">
+                <button onClick={() => handleNav('about')} className="hover:text-amber-200 transition-colors cursor-pointer text-left py-0.5">
                   About Us (Lokoja)
                 </button>
               </li>
               <li>
-                <button onClick={() => handleNav('products')} className="hover:text-amber-200 transition-colors cursor-pointer">
+                <button onClick={() => handleNav('products')} className="hover:text-amber-200 transition-colors cursor-pointer text-left py-0.5">
                   Products & Bundles
                 </button>
               </li>
               <li>
-                <button onClick={() => handleNav('wholesale')} className="hover:text-amber-200 transition-colors cursor-pointer">
+                <button onClick={() => handleNav('wholesale')} className="hover:text-amber-200 transition-colors cursor-pointer text-left py-0.5">
                   Wholesale Cartons
                 </button>
               </li>
               <li>
-                <button onClick={() => handleNav('contact')} className="hover:text-amber-200 transition-colors cursor-pointer">
+                <button onClick={() => handleNav('contact')} className="hover:text-amber-200 transition-colors cursor-pointer text-left py-0.5">
                   Contact & FAQs
                 </button>
               </li>
@@ -92,28 +92,28 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Pack Sizes */}
-          <div className="md:col-span-2 space-y-3">
-            <h4 className="text-xs font-sans tracking-[0.2em] uppercase text-stone-300 font-medium">
+          <div className="md:col-span-2 space-y-3.5">
+            <h4 className="text-sm font-sans tracking-[0.2em] uppercase text-stone-200 font-semibold">
               Popular Sizes
             </h4>
-            <ul className="space-y-2 text-xs font-light">
+            <ul className="space-y-2.5 text-sm sm:text-base font-light text-stone-300">
               <li>
-                <button onClick={() => handleNav('products')} className="hover:text-amber-200 transition-colors cursor-pointer">
+                <button onClick={() => handleNav('products')} className="hover:text-amber-200 transition-colors cursor-pointer text-left py-0.5">
                   Size L (150g) — ₦500
                 </button>
               </li>
               <li>
-                <button onClick={() => handleNav('products')} className="hover:text-amber-200 transition-colors cursor-pointer">
+                <button onClick={() => handleNav('products')} className="hover:text-amber-200 transition-colors cursor-pointer text-left py-0.5">
                   Size XL (250g) — ₦1,000
                 </button>
               </li>
               <li>
-                <button onClick={() => handleNav('products')} className="hover:text-amber-200 transition-colors cursor-pointer">
+                <button onClick={() => handleNav('products')} className="hover:text-amber-200 transition-colors cursor-pointer text-left py-0.5">
                   Size XXL (400g) — ₦1,500
                 </button>
               </li>
               <li>
-                <button onClick={() => handleNav('wholesale')} className="hover:text-amber-200 transition-colors cursor-pointer">
+                <button onClick={() => handleNav('wholesale')} className="hover:text-amber-200 transition-colors cursor-pointer text-left py-0.5">
                   Wholesale Cartons
                 </button>
               </li>
@@ -121,32 +121,32 @@ export const Footer: React.FC = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="md:col-span-4 space-y-3">
-            <h4 className="text-xs font-sans tracking-[0.2em] uppercase text-stone-300 font-medium">
+          <div className="md:col-span-4 space-y-3.5">
+            <h4 className="text-sm font-sans tracking-[0.2em] uppercase text-stone-200 font-semibold">
               Yadah Snacker Club
             </h4>
-            <p className="text-xs text-stone-400 font-light leading-relaxed">
+            <p className="text-sm sm:text-base text-stone-300 font-light leading-relaxed">
               Sign up for fresh batch announcements, wholesale promotions, and interstate waybill discounts.
             </p>
 
             {subscribed ? (
-              <div className="p-3 rounded-xl bg-amber-950/30 border border-[#cca578]/40 text-xs text-amber-200 flex items-center gap-2">
-                <Check className="w-4 h-4 text-[#cca578]" />
+              <div className="p-3.5 rounded-xl bg-amber-950/30 border border-[#cca578]/40 text-sm text-amber-200 flex items-center gap-2.5">
+                <Check className="w-5 h-5 text-[#cca578]" />
                 <span>You're registered for fresh batch updates!</span>
               </div>
             ) : (
               <form onSubmit={handleSubscribe} className="flex gap-2">
                 <input
-                  type="email"
+                  type="text"
                   required
-                  placeholder="Enter your phone or email"
+                  placeholder="Phone or email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="bg-stone-900/80 border border-stone-800 rounded-full px-4 py-2 text-xs text-white placeholder-stone-600 focus:outline-none focus:border-amber-400 flex-grow"
+                  className="bg-stone-900/80 border border-stone-800 rounded-full px-4 py-2.5 text-base text-white placeholder-stone-500 focus:outline-none focus:border-amber-400 flex-grow"
                 />
                 <button
                   type="submit"
-                  className="px-4 py-2 rounded-full bg-[#cca578] hover:bg-[#e2c29d] text-stone-950 text-xs font-semibold uppercase tracking-wider transition-colors shrink-0 cursor-pointer"
+                  className="px-5 py-2.5 rounded-full bg-[#cca578] hover:bg-[#e2c29d] text-stone-950 text-xs sm:text-sm font-bold uppercase tracking-wider transition-colors shrink-0 cursor-pointer active:scale-95 shadow-md"
                 >
                   Join
                 </button>
@@ -157,7 +157,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Sub-Footer */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-stone-500 font-light gap-4">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm text-stone-400 font-light gap-4">
           <div>
             © {new Date().getFullYear()} Yadah Crunchies. All rights reserved. Made with love in Lokoja, Nigeria.
           </div>
