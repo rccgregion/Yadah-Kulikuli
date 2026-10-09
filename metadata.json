@@ -1,0 +1,6 @@
+{
+  "name": "Yadah Crunchies | Artisanal Flat Kulikuli",
+  "description": "Premium artisanal flat kulikuli peanut crisps crafted in Lokoja, Nigeria. 100% natural, protein-rich, wafer-thin crunch.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-brand: 'Cinzel', serif;
+  --font-cursive: 'Alex Brush', cursive;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --color-obsidian-950: #060608;
+  --color-obsidian-900: #0b0b0e;
+  --color-obsidian-850: #121217;
+  --color-obsidian-800: #1a1a22;
+  --color-obsidian-700: #262630;
+  --color-bronze-200: #f2e3d0;
+  --color-bronze-300: #e2c29d;
+  --color-bronze-400: #cca578;
+  --color-bronze-500: #b58d5f;
+  --color-bronze-600: #8c683f;
+  --color-gold-300: #f7df9e;
+  --color-gold-400: #e5b95b;
+  --color-gold-500: #d4a034;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #08080a;
+  color: #e5e5e7;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: #cca578;
+  color: #08080a;
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #08080a;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a35;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b58d5f;
+}
+
+/* Luxury button gradient border effect */
+.luxury-btn-glow {
+  background: linear-gradient(135deg, rgba(204, 165, 120, 0.18) 0%, rgba(140, 104, 63, 0.12) 100%);
+  border: 1px solid rgba(204, 165, 120, 0.45);
+  box-shadow: 0 0 25px -5px rgba(204, 165, 120, 0.15);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.luxury-btn-glow:hover {
+  background: linear-gradient(135deg, rgba(204, 165, 120, 0.3) 0%, rgba(140, 104, 63, 0.22) 100%);
+  border-color: rgba(226, 194, 157, 0.7);
+  box-shadow: 0 0 35px -2px rgba(204, 165, 120, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Metallic text gradient */
+.text-metallic-gold {
+  background: linear-gradient(135deg, #f7df9e 0%, #cca578 50%, #9e7545 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
