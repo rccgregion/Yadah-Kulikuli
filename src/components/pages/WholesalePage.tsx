@@ -46,14 +46,14 @@ export const WholesalePage: React.FC = () => {
     <div className="pt-24 sm:pt-28 lg:pt-36 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 sm:space-y-28">
       
       {/* 1. Header */}
-      <div className="max-w-3xl mx-auto text-center space-y-3.5">
-        <span className="font-serif text-sm sm:text-base tracking-[0.35em] uppercase text-[#cca578] font-medium block">
+      <div className="max-w-3xl mx-auto text-center space-y-3">
+        <span className="font-serif text-xs sm:text-sm tracking-[0.35em] uppercase text-[#cca578] font-medium block">
           DISTRIBUTION & RETAIL PARTNERSHIPS
         </span>
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-light text-white leading-tight">
+        <h1 className="text-3xl sm:text-4xl lg:text-6xl font-serif font-light text-white leading-tight">
           Wholesale Cartons & Distributor Program
         </h1>
-        <p className="text-stone-200 text-base sm:text-lg lg:text-xl font-light max-w-xl mx-auto">
+        <p className="text-stone-300 text-sm sm:text-base lg:text-lg font-light max-w-xl mx-auto">
           High-margin, fast-moving artisanal snack cartons for supermarkets, lounges, university campuses, and retail stores across Nigeria.
         </p>
       </div>
@@ -61,10 +61,10 @@ export const WholesalePage: React.FC = () => {
       {/* 2. Standard Carton Tiers Grid */}
       <section className="space-y-8">
         <div>
-          <span className="font-serif text-sm sm:text-base tracking-[0.3em] uppercase text-[#cca578] font-medium block mb-1.5">
+          <span className="font-serif text-xs sm:text-sm tracking-[0.3em] uppercase text-[#cca578] font-medium block mb-1.5">
             STANDARD CARTON TIERS
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif font-light text-white">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-serif font-light text-white">
             Wholesale Carton Specifications
           </h2>
         </div>

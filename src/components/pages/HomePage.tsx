@@ -65,22 +65,22 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               </div>
 
               {/* Main Headline */}
-              <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-light text-white leading-[1.08] mb-5 text-balance">
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-light text-white leading-[1.1] mb-5 text-balance">
                 THE GOLDEN
                 <br />
                 <span className="text-metallic-gold font-normal">FLAT KULIKULI</span>
               </h1>
 
               {/* Front Highlights Ribbon */}
-              <div className="flex flex-wrap items-center gap-2 sm:gap-2.5 text-sm sm:text-base font-sans tracking-wide text-amber-200/95 mb-6 sm:mb-8">
-                <span className="bg-stone-900/90 border border-amber-900/60 rounded-full px-4 py-1.5 shadow-sm font-medium">Fresh Crunchy Spicy</span>
-                <span className="bg-stone-900/90 border border-amber-900/60 rounded-full px-4 py-1.5 shadow-sm font-medium">100% Natural</span>
-                <span className="bg-stone-900/90 border border-amber-900/60 rounded-full px-4 py-1.5 shadow-sm font-medium">Rich in Protein</span>
-                <span className="bg-stone-900/90 border border-amber-900/60 rounded-full px-4 py-1.5 shadow-sm font-medium">Bold & Spicy</span>
+              <div className="flex flex-wrap items-center gap-2 sm:gap-2.5 text-xs sm:text-sm font-sans tracking-wide text-amber-200/95 mb-6 sm:mb-8">
+                <span className="bg-stone-900/90 border border-amber-900/60 rounded-full px-3.5 py-1.5 shadow-sm font-medium">Fresh Crunchy Spicy</span>
+                <span className="bg-stone-900/90 border border-amber-900/60 rounded-full px-3.5 py-1.5 shadow-sm font-medium">100% Natural</span>
+                <span className="bg-stone-900/90 border border-amber-900/60 rounded-full px-3.5 py-1.5 shadow-sm font-medium">Rich in Protein</span>
+                <span className="bg-stone-900/90 border border-amber-900/60 rounded-full px-3.5 py-1.5 shadow-sm font-medium">Bold & Spicy</span>
               </div>
 
               {/* Description */}
-              <p className="text-stone-200 text-base sm:text-lg lg:text-xl leading-relaxed max-w-xl mb-8 font-light">
+              <p className="text-stone-300 text-sm sm:text-base lg:text-lg leading-relaxed max-w-xl mb-8 font-light">
                 Sculpted from selected Nigerian groundnuts and authentic spices. Pressed wafer-thin for a shatteringly light, addictive crunch with zero grit. <em className="text-amber-200 font-normal">“Crunch You Can’t Resist.”</em>
               </p>
 
@@ -176,64 +176,64 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
       {/* 2. KEY PRODUCT ATTRIBUTES GRID */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14">
-          <span className="font-serif text-sm sm:text-base tracking-[0.3em] uppercase text-[#cca578] block mb-2 font-medium">
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
+          <span className="font-serif text-xs sm:text-sm tracking-[0.3em] uppercase text-[#cca578] block mb-2 font-medium">
             THE CRAFTSMANSHIP PILLARS
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif font-light text-white tracking-wide">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-serif font-light text-white tracking-wide">
             Key Product Attributes
           </h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {/* Attribute 1: 100% Natural */}
-          <div className="p-6 sm:p-8 rounded-2xl bg-[#0f0f14] border border-stone-800/80 hover:border-amber-900/50 transition-all group">
-            <div className="w-14 h-14 rounded-xl bg-amber-950/30 border border-[#cca578]/40 flex items-center justify-center text-[#cca578] mb-5 group-hover:scale-110 transition-transform">
-              <Leaf className="w-7 h-7 text-emerald-400" />
+          <div className="p-6 sm:p-7 rounded-2xl bg-[#0f0f14] border border-stone-800/80 hover:border-amber-900/50 transition-all group">
+            <div className="w-12 h-12 rounded-xl bg-amber-950/30 border border-[#cca578]/40 flex items-center justify-center text-[#cca578] mb-4 group-hover:scale-110 transition-transform">
+              <Leaf className="w-6 h-6 text-emerald-400" />
             </div>
-            <h3 className="font-serif text-2xl sm:text-3xl text-white mb-2.5 font-normal">
+            <h3 className="font-serif text-xl sm:text-2xl text-white mb-2 font-normal">
               🌱 100% Natural
             </h3>
-            <p className="text-base sm:text-lg text-stone-300 font-light leading-relaxed">
+            <p className="text-sm sm:text-base text-stone-300 font-light leading-relaxed">
               No artificial additives, chemical preservatives, or synthetic food colorings. Pure, unadulterated Nigerian groundnut goodness.
             </p>
           </div>
 
           {/* Attribute 2: Rich in Protein */}
-          <div className="p-6 sm:p-8 rounded-2xl bg-[#0f0f14] border border-stone-800/80 hover:border-amber-900/50 transition-all group">
-            <div className="w-14 h-14 rounded-xl bg-amber-950/30 border border-[#cca578]/40 flex items-center justify-center text-[#cca578] mb-5 group-hover:scale-110 transition-transform">
-              <Sparkles className="w-7 h-7 text-amber-300" />
+          <div className="p-6 sm:p-7 rounded-2xl bg-[#0f0f14] border border-stone-800/80 hover:border-amber-900/50 transition-all group">
+            <div className="w-12 h-12 rounded-xl bg-amber-950/30 border border-[#cca578]/40 flex items-center justify-center text-[#cca578] mb-4 group-hover:scale-110 transition-transform">
+              <Sparkles className="w-6 h-6 text-amber-300" />
             </div>
-            <h3 className="font-serif text-2xl sm:text-3xl text-white mb-2.5 font-normal">
+            <h3 className="font-serif text-xl sm:text-2xl text-white mb-2 font-normal">
               💪 Rich in Protein
             </h3>
-            <p className="text-base sm:text-lg text-stone-300 font-light leading-relaxed">
+            <p className="text-sm sm:text-base text-stone-300 font-light leading-relaxed">
               Wholesome plant-based peanut energy fuel. High satiety, heart-healthy fats, and essential amino acids for active days.
             </p>
           </div>
 
           {/* Attribute 3: Bold & Spicy */}
-          <div className="p-6 sm:p-8 rounded-2xl bg-[#0f0f14] border border-stone-800/80 hover:border-amber-900/50 transition-all group">
-            <div className="w-14 h-14 rounded-xl bg-amber-950/30 border border-[#cca578]/40 flex items-center justify-center text-[#cca578] mb-5 group-hover:scale-110 transition-transform">
-              <Flame className="w-7 h-7 text-red-400" />
+          <div className="p-6 sm:p-7 rounded-2xl bg-[#0f0f14] border border-stone-800/80 hover:border-amber-900/50 transition-all group">
+            <div className="w-12 h-12 rounded-xl bg-amber-950/30 border border-[#cca578]/40 flex items-center justify-center text-[#cca578] mb-4 group-hover:scale-110 transition-transform">
+              <Flame className="w-6 h-6 text-red-400" />
             </div>
-            <h3 className="font-serif text-2xl sm:text-3xl text-white mb-2.5 font-normal">
+            <h3 className="font-serif text-xl sm:text-2xl text-white mb-2 font-normal">
               🔥 Bold & Spicy
             </h3>
-            <p className="text-base sm:text-lg text-stone-300 font-light leading-relaxed">
+            <p className="text-sm sm:text-base text-stone-300 font-light leading-relaxed">
               Seasoned with an authentic proprietary blend of sun-dried Nigerian chili peppers, ginger, and aromatic local spices.
             </p>
           </div>
 
           {/* Attribute 4: Crunch You Can Trust */}
-          <div className="p-6 sm:p-8 rounded-2xl bg-[#0f0f14] border border-stone-800/80 hover:border-amber-900/50 transition-all group">
-            <div className="w-14 h-14 rounded-xl bg-amber-950/30 border border-[#cca578]/40 flex items-center justify-center text-[#cca578] mb-5 group-hover:scale-110 transition-transform">
-              <ShieldCheck className="w-7 h-7 text-[#cca578]" />
+          <div className="p-6 sm:p-7 rounded-2xl bg-[#0f0f14] border border-stone-800/80 hover:border-amber-900/50 transition-all group">
+            <div className="w-12 h-12 rounded-xl bg-amber-950/30 border border-[#cca578]/40 flex items-center justify-center text-[#cca578] mb-4 group-hover:scale-110 transition-transform">
+              <ShieldCheck className="w-6 h-6 text-[#cca578]" />
             </div>
-            <h3 className="font-serif text-2xl sm:text-3xl text-white mb-2.5 font-normal">
+            <h3 className="font-serif text-xl sm:text-2xl text-white mb-2 font-normal">
               ❤️ Crunch You Can Trust
             </h3>
-            <p className="text-base sm:text-lg text-stone-300 font-light leading-relaxed">
+            <p className="text-sm sm:text-base text-stone-300 font-light leading-relaxed">
               Carefully hand-sorted and destoned groundnuts with guaranteed zero sand grit. Clean, hygienic, and easy on teeth.
             </p>
           </div>
@@ -242,21 +242,21 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
       {/* 3. PACK SIZES QUICK-SHOP */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-6">
           <div>
-            <span className="font-serif text-sm sm:text-base tracking-[0.3em] uppercase text-[#cca578] block mb-2 font-medium">
+            <span className="font-serif text-xs sm:text-sm tracking-[0.3em] uppercase text-[#cca578] block mb-2 font-medium">
               RETAIL POUCHES
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif font-light text-white tracking-wide">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-serif font-light text-white tracking-wide">
               Pack Sizes Quick-Shop
             </h2>
           </div>
           <button
             onClick={() => onNavigate('products')}
-            className="text-sm sm:text-base font-sans tracking-widest uppercase text-[#cca578] hover:text-amber-200 transition-colors flex items-center gap-2 self-start md:self-auto cursor-pointer font-semibold"
+            className="text-xs sm:text-sm font-sans tracking-widest uppercase text-[#cca578] hover:text-amber-200 transition-colors flex items-center gap-2 self-start md:self-auto cursor-pointer font-semibold"
           >
             <span>View All Bundles & Nutrition</span>
-            <ArrowRight className="w-5 h-5" />
+            <ArrowRight className="w-4 h-4" />
           </button>
         </div>
 
@@ -264,23 +264,23 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           {packSizes.map((pack) => (
             <div
               key={pack.id}
-              className={`p-6 sm:p-8 rounded-2xl border transition-all flex flex-col justify-between ${
+              className={`p-6 sm:p-7 rounded-2xl border transition-all flex flex-col justify-between ${
                 pack.isPopular
                   ? 'bg-[#121218] border-amber-500/60 shadow-xl ring-1 ring-amber-500/20'
                   : 'bg-[#0f0f14] border-stone-800/80 hover:border-amber-900/40'
               }`}
             >
               <div>
-                <div className="flex items-center justify-between mb-3.5">
-                  <span className="text-xs sm:text-sm font-mono tracking-widest text-[#cca578] uppercase font-semibold">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-xs font-mono tracking-widest text-[#cca578] uppercase font-semibold">
                     {pack.tag}
                   </span>
-                  <span className="text-sm sm:text-base font-mono text-stone-200 font-bold">
+                  <span className="text-xs sm:text-sm font-mono text-stone-200 font-bold">
                     {pack.weight}
                   </span>
                 </div>
 
-                <div className="aspect-[4/3] rounded-xl overflow-hidden bg-black/60 mb-5 border border-stone-800">
+                <div className="aspect-[4/3] rounded-xl overflow-hidden bg-black/60 mb-4 border border-stone-800">
                   <img
                     src={pack.image}
                     alt={pack.name}
@@ -289,27 +289,27 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                   />
                 </div>
 
-                <h3 className="font-serif text-2xl sm:text-3xl lg:text-4xl text-white font-normal mb-2">
+                <h3 className="font-serif text-xl sm:text-2xl lg:text-3xl text-white font-normal mb-1.5">
                   {pack.name}
                 </h3>
-                <p className="text-base sm:text-lg text-stone-300 font-light mb-6 leading-relaxed">
+                <p className="text-sm sm:text-base text-stone-300 font-light mb-5 leading-relaxed">
                   {pack.description}
                 </p>
               </div>
 
-              <div className="pt-5 border-t border-stone-800 flex items-center justify-between">
+              <div className="pt-4 border-t border-stone-800 flex items-center justify-between">
                 <div>
-                  <span className="text-xs sm:text-sm uppercase text-stone-400 block font-medium">Unit Price</span>
-                  <span className="font-mono text-2xl sm:text-3xl font-bold text-amber-200">
+                  <span className="text-xs uppercase text-stone-400 block font-medium">Unit Price</span>
+                  <span className="font-mono text-xl sm:text-2xl font-bold text-amber-200">
                     {formatNaira(pack.priceNaira)}
                   </span>
                 </div>
 
                 <button
                   onClick={() => addToCart(pack)}
-                  className="px-6 py-3.5 rounded-full bg-[#cca578] hover:bg-[#e2c29d] text-stone-950 font-bold text-sm sm:text-base tracking-wider uppercase transition-all flex items-center gap-2 cursor-pointer shadow-md active:scale-98"
+                  className="px-5 py-3 rounded-full bg-[#cca578] hover:bg-[#e2c29d] text-stone-950 font-bold text-xs sm:text-sm tracking-wider uppercase transition-all flex items-center gap-2 cursor-pointer shadow-md active:scale-98"
                 >
-                  <Plus className="w-5 h-5 stroke-[2.5]" />
+                  <Plus className="w-4 h-4 stroke-[2.5]" />
                   <span>Add to Bag</span>
                 </button>
               </div>
@@ -320,32 +320,32 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
       {/* 4. THE CLASSIC PAIRING STORY (Soaked Chilled Garri Combo) */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="p-6 sm:p-12 lg:p-14 rounded-3xl bg-gradient-to-br from-[#121217] via-[#0d0d12] to-[#08080a] border border-amber-900/40 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="p-6 sm:p-10 lg:p-12 rounded-3xl bg-gradient-to-br from-[#121217] via-[#0d0d12] to-[#08080a] border border-amber-900/40 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           
-          <div className="lg:col-span-6 space-y-5 sm:space-y-6">
-            <span className="font-serif text-sm sm:text-base tracking-[0.3em] uppercase text-[#cca578] font-medium block">
+          <div className="lg:col-span-6 space-y-4 sm:space-y-5">
+            <span className="font-serif text-xs sm:text-sm tracking-[0.3em] uppercase text-[#cca578] font-medium block">
               THE NOSTALGIC NIGERIAN TRADITION
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif font-light text-white leading-tight">
+            <h2 className="text-2xl sm:text-3xl lg:text-5xl font-serif font-light text-white leading-tight">
               The Iconic Chilled Soaked Garri Pairing
             </h2>
-            <p className="text-stone-200 text-base sm:text-lg lg:text-xl font-light leading-relaxed">
+            <p className="text-stone-200 text-sm sm:text-base lg:text-lg font-light leading-relaxed">
               Nothing in African culinary culture rivals the afternoon ceremony of ice-cold soaked cassava garri paired with wafer-thin flat kulikuli.
             </p>
-            <p className="text-stone-300 text-base sm:text-lg font-light leading-relaxed">
+            <p className="text-stone-300 text-sm sm:text-base font-light leading-relaxed">
               While ordinary dense kulikuli gets gummy or cracks teeth, Yadah Crunchies’ flat shape retains its crisp snap even when spooned alongside chilled evaporated milk, crunchy roasted peanuts, and ice cubes. The spicy ginger-chili warmth dances against the refreshing cool tang of the garri.
             </p>
 
-            <div className="pt-3 flex flex-col sm:flex-row gap-3.5 sm:gap-4">
+            <div className="pt-2 flex flex-col sm:flex-row gap-3 sm:gap-4">
               <button
                 onClick={() => onNavigate('products')}
-                className="w-full sm:w-auto px-8 py-4 rounded-full bg-[#cca578] text-stone-950 text-sm sm:text-base font-bold uppercase tracking-wider hover:bg-[#e2c29d] transition-all cursor-pointer text-center active:scale-98 shadow-md"
+                className="w-full sm:w-auto px-7 py-3.5 rounded-full bg-[#cca578] text-stone-950 text-xs sm:text-sm font-bold uppercase tracking-wider hover:bg-[#e2c29d] transition-all cursor-pointer text-center active:scale-98 shadow-md"
               >
                 Stock Up for Garri Soakings
               </button>
               <button
                 onClick={() => onNavigate('about')}
-                className="w-full sm:w-auto px-8 py-4 rounded-full border border-stone-700 text-stone-200 hover:text-white text-sm sm:text-base font-sans tracking-wider uppercase transition-all cursor-pointer text-center active:scale-98"
+                className="w-full sm:w-auto px-7 py-3.5 rounded-full border border-stone-700 text-stone-200 hover:text-white text-xs sm:text-sm font-sans tracking-wider uppercase transition-all cursor-pointer text-center active:scale-98"
               >
                 Read Our Lokoja Story
               </button>
@@ -368,11 +368,11 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
 
       {/* 5. SNACKER REVIEWS & TESTIMONIALS */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-2xl mx-auto mb-12 sm:mb-14">
-          <span className="font-serif text-sm sm:text-base tracking-[0.3em] uppercase text-[#cca578] block mb-2 font-medium">
+        <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
+          <span className="font-serif text-xs sm:text-sm tracking-[0.3em] uppercase text-[#cca578] block mb-2 font-medium">
             VOICES OF NIGERIAN SNACKERS
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif font-light text-white tracking-wide">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-serif font-light text-white tracking-wide">
             Loved Across Lagos, Abuja & Lokoja
           </h2>
         </div>
@@ -381,29 +381,29 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           {REVIEWS.map((review) => (
             <div
               key={review.id}
-              className="p-7 sm:p-9 rounded-2xl bg-[#0f0f14] border border-stone-800/80 flex flex-col justify-between"
+              className="p-6 sm:p-8 rounded-2xl bg-[#0f0f14] border border-stone-800/80 flex flex-col justify-between"
             >
               <div>
-                <div className="flex items-center gap-1.5 text-[#e5b95b] text-lg mb-4">
+                <div className="flex items-center gap-1.5 text-[#e5b95b] text-base mb-3.5">
                   {[...Array(review.rating)].map((_, i) => (
                     <span key={i}>★</span>
                   ))}
                 </div>
-                <p className="text-stone-200 text-base sm:text-lg lg:text-xl font-light leading-relaxed italic mb-6">
+                <p className="text-stone-200 text-sm sm:text-base lg:text-lg font-light leading-relaxed italic mb-5">
                   "{review.quote}"
                 </p>
               </div>
 
-              <div className="pt-5 border-t border-stone-800/80 flex items-center justify-between">
+              <div className="pt-4 border-t border-stone-800/80 flex items-center justify-between">
                 <div>
-                  <h4 className="font-serif text-white font-medium text-lg sm:text-xl">
+                  <h4 className="font-serif text-white font-medium text-base sm:text-lg">
                     {review.author}
                   </h4>
-                  <span className="text-[#cca578] font-sans text-sm sm:text-base font-medium">
+                  <span className="text-[#cca578] font-sans text-xs sm:text-sm font-medium">
                     {review.location}
                   </span>
                 </div>
-                <span className="text-xs sm:text-sm font-mono text-emerald-300 bg-emerald-950/50 border border-emerald-800/60 px-3 py-1.5 rounded-full font-semibold">
+                <span className="text-xs font-mono text-emerald-300 bg-emerald-950/50 border border-emerald-800/60 px-2.5 py-1 rounded-full font-semibold">
                   Verified Snacker
                 </span>
               </div>

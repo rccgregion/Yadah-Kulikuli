@@ -17,14 +17,14 @@ export const ProductsPage: React.FC = () => {
     <div className="pt-24 sm:pt-28 lg:pt-36 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 sm:space-y-28">
       
       {/* 1. Page Header */}
-      <div className="max-w-3xl mx-auto text-center space-y-3.5">
-        <span className="font-serif text-sm sm:text-base tracking-[0.35em] uppercase text-[#cca578] font-medium block">
+      <div className="max-w-3xl mx-auto text-center space-y-3">
+        <span className="font-serif text-xs sm:text-sm tracking-[0.35em] uppercase text-[#cca578] font-medium block">
           THE ARTISANAL ROSTER
         </span>
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-light text-white leading-tight">
+        <h1 className="text-3xl sm:text-4xl lg:text-6xl font-serif font-light text-white leading-tight">
           Our Products & Bundles
         </h1>
-        <p className="text-stone-200 text-base sm:text-lg lg:text-xl font-light max-w-xl mx-auto">
+        <p className="text-stone-300 text-sm sm:text-base lg:text-lg font-light max-w-xl mx-auto">
           Each pouch is sealed fresh with pure Nigerian groundnuts, local chili warmth, and zero grit.
         </p>
       </div>
@@ -112,10 +112,10 @@ export const ProductsPage: React.FC = () => {
       {/* 3. Party & Gifting Bundles */}
       <section className="space-y-8">
         <div>
-          <span className="font-serif text-sm sm:text-base tracking-[0.3em] uppercase text-[#cca578] font-medium block mb-1.5">
+          <span className="font-serif text-xs sm:text-sm tracking-[0.3em] uppercase text-[#cca578] font-medium block mb-1.5">
             CELEBRATION & SHARING
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif font-light text-white">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-serif font-light text-white">
             Party & Gifting Bundles
           </h2>
         </div>

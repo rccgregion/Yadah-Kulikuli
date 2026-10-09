@@ -25,14 +25,14 @@ export const ContactPage: React.FC = () => {
     <div className="pt-24 sm:pt-28 lg:pt-36 pb-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20 sm:space-y-28">
       
       {/* 1. Page Header */}
-      <div className="max-w-3xl mx-auto text-center space-y-3.5">
-        <span className="font-serif text-sm sm:text-base tracking-[0.35em] uppercase text-[#cca578] font-medium block">
+      <div className="max-w-3xl mx-auto text-center space-y-3">
+        <span className="font-serif text-xs sm:text-sm tracking-[0.35em] uppercase text-[#cca578] font-medium block">
           LIAISON & SUPPORT
         </span>
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-light text-white leading-tight">
+        <h1 className="text-3xl sm:text-4xl lg:text-6xl font-serif font-light text-white leading-tight">
           Contact Yadah Crunchies
         </h1>
-        <p className="text-stone-200 text-base sm:text-lg lg:text-xl font-light max-w-xl mx-auto">
+        <p className="text-stone-300 text-sm sm:text-base lg:text-lg font-light max-w-xl mx-auto">
           Whether you need a quick personal pack, a 50-carton wholesale consignment, or party favors for a wedding in Abuja or Lagos, we are here for you.
         </p>
       </div>
@@ -229,10 +229,10 @@ export const ContactPage: React.FC = () => {
       {/* 3. Frequently Asked Questions (FAQ) Accordion */}
       <section className="space-y-6">
         <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-10">
-          <span className="font-serif text-sm sm:text-base tracking-[0.3em] uppercase text-[#cca578] font-medium block mb-1.5">
+          <span className="font-serif text-xs sm:text-sm tracking-[0.3em] uppercase text-[#cca578] font-medium block mb-1.5">
             CLARITY & ASSURANCE
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-serif font-light text-white">
+          <h2 className="text-2xl sm:text-3xl lg:text-5xl font-serif font-light text-white">
             Frequently Asked Questions
           </h2>
         </div>
